@@ -45,7 +45,7 @@ function uploadTransaction() {
   const transaction = db.transaction(["new_transaction"], "readwrite");
 
   // access your object store
-  const transactionObjectStore = transaction.objectStore("transaction");
+  const transactionObjectStore = transaction.objectStore("new_transaction");
 
   // get all records from store and set to a variable
   const getAll = transactionObjectStore.getAll();
